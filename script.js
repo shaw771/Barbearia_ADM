@@ -4,7 +4,9 @@ import {
     getFirestore, onSnapshot, orderBy, query, serverTimestamp,
     setDoc, updateDoc, where,
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
-
+ 
+// 🔥 CORINGA UNIVERSAL ABSOLUTO: Libera tudo para testes e desenvolvimento local
+    
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
