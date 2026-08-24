@@ -5,6 +5,15 @@ import {
     setDoc, updateDoc, where,
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if true;
+    }
+  }
+}
+
 /* =========================================
    Firebase (somente Firestore — sem Auth)
 ========================================= */
