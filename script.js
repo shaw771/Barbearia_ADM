@@ -1,3 +1,5 @@
+import { getAuth, signInAnonymously } from "https://gstatic.com";
+
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import {
     addDoc, collection, deleteDoc, doc, getDoc, getDocs,
